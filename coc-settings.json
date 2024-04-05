@@ -1,0 +1,26 @@
+{
+  "eslint.enable": true,
+  "eslint.autoFixOnSave": true,
+  "javascript.suggest.autoImports": true,
+  "typescript.suggest.autoImports": true,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "prisma",
+    "css",
+    "html",
+    "markdown",
+    "typescriptreact",
+    "typescript",
+    "javascriptreact",
+    "javascript",
+    "json",
+    "graphql"
+  ],
+  "languageserver": {
+    "graphql": {
+      "command": "graphql-lsp",
+      "trace.server": "verbose",
+      "args": ["server", "-m", "stream"],
+      "filetypes": ["typescript", "typescriptreact", "graphql", "gql"]
+    }
+  }
+}
