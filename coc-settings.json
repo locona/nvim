@@ -1,6 +1,6 @@
 {
-  "eslint.enable": true,
-  "eslint.autoFixOnSave": true,
+  "eslint.enable": false,
+  "eslint.autoFixOnSave": false,
   "javascript.suggest.autoImports": true,
   "typescript.suggest.autoImports": true,
   "coc.preferences.formatOnSaveFiletypes": [
