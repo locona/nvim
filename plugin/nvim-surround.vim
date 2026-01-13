@@ -1,3 +1,6 @@
 lua << EOF
-require("nvim-surround").setup()
+local ok, surround = pcall(require, "nvim-surround")
+if ok then
+  surround.setup()
+end
 EOF

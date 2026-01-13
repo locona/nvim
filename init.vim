@@ -7,6 +7,8 @@ packadd vim-jetpack
 call jetpack#begin()
 Jetpack 'tani/vim-jetpack', {'opt': 1} "bootstrap
 Jetpack 'https://github.com/dense-analysis/ale'
+
+Jetpack 'neovim/nvim-lspconfig'
 " Jetpack 'junegunn/fzf.vim'
 " Jetpack 'neoclide/coc.nvim', {'branch': 'release'}
 Jetpack 'vlime/vlime', { 'rtp': 'vim' }
@@ -67,10 +69,16 @@ runtime plugin/nvim-treesitter.vim
 runtime plugin/comment.vim
 
 lua << EOF
-require('monokai').setup {}
+local ok, monokai = pcall(require, 'monokai')
+if ok then
+  monokai.setup {}
+end
 
-require('colorizer').setup {
-  '*'; -- Highlight all files, but customize some others.
-}
+local ok2, colorizer = pcall(require, 'colorizer')
+if ok2 then
+  colorizer.setup {
+    '*'; -- Highlight all files, but customize some others.
+  }
+end
 EOF
 

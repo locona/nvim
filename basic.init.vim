@@ -59,7 +59,7 @@ set visualbell
 set visualbell t_vb=
 set noerrorbells
 
-set imdisable
+" set imdisable " Neovim では非サポート (MacVim専用)
 " スワップファイルファイルの設定(Readonly)
 augroup swapchoice-readonly
   autocmd!
