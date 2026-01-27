@@ -47,7 +47,6 @@ set autoindent          "改行時に前の行のインデントを計測
 set smartindent         "改行時に入力された行の末尾に合わせて次の行のインデントを増減する
 
 set hlsearch            "検索結果ハイライト
-set termguicolors       "24-bit RGB colors
 set pumheight=10        "補完ポップアップの高さ
 
 set re=0                "軽くなるらしい
